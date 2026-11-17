@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__link {
+    font-size: v.$font-size-md;
+    font-weight: v.$font-medium;
+    transition: v.$transition-fast;
+
+    &:hover {
+      color: v.$color-secondary;
+    }
+
+    &--active {
+      color: v.$color-primary;
+      font-weight: v.$font-bold;
+    }
+  }
+}

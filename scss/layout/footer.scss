@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as v;
+
+.footer {
+  background-color: v.$color-primary;
+  color: v.$color-white;
+  padding: v.$spacing-xl 0;
+
+  &__container {
+    max-width: v.$container-width;
+    margin: 0 auto;
+    padding: 0 v.$container-padding;
+    display: flex;
+    justify-content: space-between;
+    gap: v.$spacing-lg;
+  }
+
+  &__copyright {
+    text-align: center;
+    margin-top: v.$spacing-lg;
+    font-size: v.$font-size-sm;
+  }
+}

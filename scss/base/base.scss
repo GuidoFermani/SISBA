@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+body {
+  background-color: v.$color-white;
+  color: v.$color-black;
+  overflow-x: hidden;
+}
+
+.container {
+  @include m.container;
+}
+
+section {
+  padding: v.$spacing-xl 0;
+}

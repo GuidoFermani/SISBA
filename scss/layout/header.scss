@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+
+.header {
+  width: 100%;
+  min-height: 90px;
+  background-color: v.$color-white;
+  position: relative;
+  z-index: v.$z-header;
+
+  &__container {
+    max-width: v.$container-width;
+    margin: 0 auto;
+    padding: 15px v.$container-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    max-width: 180px;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

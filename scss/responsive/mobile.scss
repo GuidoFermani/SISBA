@@ -1,0 +1,25 @@
+@use '../abstracts/mixins' as m;
+
+@include m.mobile {
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .header__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

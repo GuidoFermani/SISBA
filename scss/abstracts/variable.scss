@@ -1,0 +1,56 @@
+// ========================================
+// IDENTIDAD VISUAL - S.I.S.BA.
+// ========================================
+
+// Colores institucionales
+$color-primary: #1d3557;
+$color-secondary: #457b9d;
+$color-accent: #e9a23b;
+
+// Colores neutros
+$color-white: #ffffff;
+$color-black: #111111;
+$color-gray-light: #f4f5f7;
+$color-gray: #777777;
+$color-gray-dark: #333333;
+
+// Tipografía
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Arial', sans-serif;
+
+// Tamaños de texto
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 3rem;
+
+// Pesos tipográficos
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+// Contenedores
+$container-width: 1200px;
+$container-padding: 20px;
+
+// Espaciados
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 40px;
+$spacing-xl: 60px;
+
+// Bordes
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+
+// Transiciones
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+
+// Capas
+$z-header: 100;
+$z-modal: 1000;

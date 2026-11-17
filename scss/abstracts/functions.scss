@@ -1,0 +1,4 @@
+// Convertir píxeles a rem
+@function rem($pixels) {
+  @return ($pixels / 16) * 1rem;
+}

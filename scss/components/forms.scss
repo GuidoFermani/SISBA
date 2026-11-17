@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as v;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacing-md;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-xs;
+  }
+
+  &__label {
+    font-weight: v.$font-medium;
+  }
+
+  &__input,
+  &__textarea,
+  &__select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: v.$border-radius-md;
+    outline: none;
+    transition: v.$transition-fast;
+
+    &:focus {
+      border-color: v.$color-primary;
+    }
+  }
+
+  &__textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+}

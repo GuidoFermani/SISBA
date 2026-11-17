@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as v;
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 28px;
+  border: 2px solid transparent;
+  border-radius: v.$border-radius-md;
+  font-weight: v.$font-bold;
+  cursor: pointer;
+  transition: v.$transition-normal;
+
+  &--primary {
+    background-color: v.$color-primary;
+    color: v.$color-white;
+
+    &:hover {
+      background-color: v.$color-secondary;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: v.$color-primary;
+    border-color: v.$color-primary;
+
+    &:hover {
+      background-color: v.$color-primary;
+      color: v.$color-white;
+    }
+  }
+}
