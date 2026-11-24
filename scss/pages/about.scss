@@ -1,0 +1,64 @@
+
+@use '../abstracts/variables' as v;
+
+.page-header {
+  background: linear-gradient(
+    120deg,
+    v.$color-primary,
+    v.$color-secondary
+  );
+  color: v.$color-white;
+  text-align: center;
+  padding: 80px 20px;
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+  }
+}
+
+.page-content {
+  padding: 80px 20px;
+  background-color: v.$color-white;
+
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h2 {
+    color: v.$color-primary;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: v.$color-gray-dark;
+    font-size: 1.1rem;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header {
+    padding: 60px 20px;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .page-content {
+    padding: 50px 20px;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+}
